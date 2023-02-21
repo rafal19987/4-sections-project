@@ -1,2 +1,82 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
+
+header {
+  h1 {
+    font-weight: 500;
+    font-size: var(--fontS-l);
+    letter-spacing: -0.002em;
+    line-height: 40px;
+    margin: 48px 16px 0 16px;
+  }
+  p {
+    font-weight: 400;
+    font-size: var(--fontS-s);
+    line-height: 24px;
+    margin: 16px 16px 0 16px;
+  }
+}
+
+main {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: var(--card-bg-color);
+    border-radius: var(--mobile-rounded);
+    margin: 16px 16px 0 16px;
+    height: 100%;
+    // margin top for first card
+    &:nth-child(1) {
+      margin-top: 24px;
+    }
+    // margin bottom for last card
+    &:nth-child(4) {
+      margin-bottom: 64px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      margin-top: 20px;
+      border-radius: 14px;
+      width: 56px;
+      height: 56px;
+      img {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+      }
+    }
+    h2 {
+      margin: 92px 0 0 0;
+      font-weight: 500;
+      line-height: 24px;
+      font-size: var(--fontS-m);
+    }
+    p {
+      text-align: center;
+      line-height: 22px;
+      opacity: 0.5;
+      margin: 16px 20px 20px 20px;
+    }
+  }
+}
+
+#first-card-icon {
+  background-color: var(--first-card-icon-bg-color);
+}
+
+#second-card-icon {
+  background-color: var(--second-card-icon-bg-color);
+}
+
+#third-card-icon {
+  background-color: var(--third-card-icon-bg-color);
+}
+
+#fourth-card-icon {
+  background-color: var(--fourth-card-icon-bg-color);
+}
