@@ -1,0 +1,21 @@
+/// Root Styles file
+/// Here we define all the root variables we need for our project.
+/// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
+
+:root {
+  --body-bg-color: #0f162d;
+  --card-bg-color: #272d42;
+  --white: #fff;
+  --black: #000;
+  --first-card-icon-bg-color: #373155;
+  --second-card-icon-bg-color: #2c3455;
+  --third-card-icon-bg-color: #274255;
+  --fourth-card-icon-bg-color: #3d413f;
+  --fontS-xs: 14px;
+  --fontS-s: 16px;
+  --fontS-m: 20px;
+  --fontS-l: 32px;
+  --fontS-xl: 48px;
+  --rounded: 24px;
+  --mobile-rounded: 16px;
+}
