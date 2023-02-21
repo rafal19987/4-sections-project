@@ -1,6 +1,7 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
 
+// Mobile styles
 header {
   h1 {
     font-weight: 500;
@@ -79,4 +80,56 @@ main {
 
 #fourth-card-icon {
   background-color: var(--fourth-card-icon-bg-color);
+}
+
+// Tablets styles
+
+@media screen and (min-width: 600px) {
+  body {
+    border: 1px solid red;
+    height: 100vh;
+  }
+  #home-page {
+    border: 1px solid red;
+    width: 496px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    header {
+      border: 1px solid red;
+
+      h1 {
+        border: 1px solid red;
+        margin: 0;
+        font-size: var(--fontS-xl);
+        line-height: 56px;
+        font-weight: 500;
+      }
+      p {
+        border: 1px solid red;
+        margin: 16px 0 0 0;
+      }
+    }
+    main {
+      border: 1px solid red;
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+
+      section {
+        border: 1px solid red;
+        margin: 0 0;
+        width: 240px;
+        height: 218px;
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+        p {
+          margin: 16px 17px 20px 14px;
+        }
+      }
+    }
+  }
 }
